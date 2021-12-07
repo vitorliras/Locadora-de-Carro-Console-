@@ -10,10 +10,32 @@ namespace Locadora_de_carro_console
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("1-Cliente / 2- locadora");
-            int escolha = int.Parse(Console.ReadLine());
+            Console.WriteLine("1-Locadora / 2- Cliente");
+            int opcao = int.Parse(Console.ReadLine());
 
-            if(escolha == 1){
+            while( opcao == 1){
+                    Console.WriteLine("Digite a senha de funcionário: ");
+                    string senha = Console.ReadLine();
+
+                    if(senha == "locadora"){
+                        Console.WriteLine("Bem-vindo ao sistema de cadastro da locadora de carro");
+                        ProgramLocadora pl = new ProgramLocadora();
+                        pl.programLocadora();
+                        break;
+                    }else{
+                        Console.WriteLine("Senha incorreta, 1- digitar senha novamente / 2- Sou Cliente / 3- cancelar e sair ");
+                        int resp = int.Parse(Console.ReadLine());
+                        if(resp == 1){
+                            continue;
+                        }else if(resp == 2){
+                            opcao = 2;
+                        }else{
+                            break;
+                        }
+                    }
+                }
+            if(opcao == 2){
+                int escolha=1;
                 double total = 0.0;
                 int dia=0;
                 string nome = "";
@@ -201,10 +223,11 @@ namespace Locadora_de_carro_console
             }
                 ProgramCliente pg = new ProgramCliente();
                 pg.programCliente();
-                Console.WriteLine($"Veiculo: {nome} \nR${string.Format("{0:0.00}", total)}");  
+                Console.WriteLine($"Veiculo: {nome} \nR${string.Format("{0:0.00}", total)}"); 
+                
+            }else{
                 
             }
-             
         }
     }
 }

@@ -71,7 +71,7 @@ namespace Locadora_de_carro_console
 
         private void ExcluirCliente()
         {
-            Console.Write("Digite o id do produto: ");
+            Console.Write("Digite o id do cliente: ");
 		    int id = int.Parse(Console.ReadLine());
 
             RepCliente.getInstancia().Exclui(id);
@@ -79,7 +79,7 @@ namespace Locadora_de_carro_console
 
         private void VisualizarCliente()
         {
-            Console.Write("Digite o id do produto: ");
+            Console.Write("Digite o id do cliente: ");
             int id = int.Parse(Console.ReadLine());
 
             var cliente = RepCliente.getInstancia().RetornaPorId(id);

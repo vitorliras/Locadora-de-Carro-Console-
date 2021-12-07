@@ -44,10 +44,6 @@ namespace Locadora_de_carro_console.Repositorio
             return ListaLocadora[id];
         }
 
-        public void Catalogo(int id, Carro carro)
-        {
-           // double valor = ListaLocadora[id].getValor;
-            Console.WriteLine();
-        }
+        
     }
 }

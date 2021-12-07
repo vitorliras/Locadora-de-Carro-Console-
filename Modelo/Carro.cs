@@ -36,8 +36,6 @@ namespace Locadora_de_carro_console.Modelo
         public void setMarca(Marca marca){
             this.marca = marca; 
         }
-         
-        
-    
+
     }
 }
