@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using Locadora_de_carro_console.Modelo;
 
@@ -41,6 +42,12 @@ namespace Locadora_de_carro_console.Repositorio
         public Locadora RetornaPorId(int id)
         {
             return ListaLocadora[id];
+        }
+
+        public void Catalogo(int id, Carro carro)
+        {
+           // double valor = ListaLocadora[id].getValor;
+            Console.WriteLine();
         }
     }
 }

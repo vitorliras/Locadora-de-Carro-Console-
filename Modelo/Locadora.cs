@@ -22,6 +22,16 @@ namespace Locadora_de_carro_console.Modelo
             retorno += "Data da Entrega do veiculo- " +$"{this.diaE}/{this.mesE}/{this.anoE}" + System.Environment.NewLine;
             return retorno;
         }
+
+        public string Catalogo()
+        {
+            string retorno = "";
+            retorno += "Id -"+ this.id + System.Environment.NewLine;
+            retorno += "Valor -" + this.valor + System.Environment.NewLine;
+            retorno += "Modelo -"+ carro.ToString() + System.Environment.NewLine;
+            retorno += "Marca- " +$"{this.diaS}/{this.mesS}/{this.anoS}" + System.Environment.NewLine;
+            return retorno;
+        }
         
         public int getId(){
             return this.id; 

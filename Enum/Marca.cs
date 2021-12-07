@@ -1,16 +1,11 @@
-namespace Locadora_de_carro_console.Enum
+namespace Locadora_de_carro_console
 {
     public enum Marca
     {
         FIAT = 1,
-        Audi = 2,
+        Ford = 2,
         Chevrolet = 3,
         Volkswagen = 4,
-        Nissan = 5,
-        Renault = 6,
-        Hyundai = 7,
-        Ford = 8,
-        Porsche = 9,
-        BMW = 10
+        Nissan = 5
     }
 }

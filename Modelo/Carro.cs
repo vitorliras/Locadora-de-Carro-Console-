@@ -1,4 +1,4 @@
-using Locadora_de_carro_console.Enum;
+using Locadora_de_carro_console;
 
 namespace Locadora_de_carro_console.Modelo
 {
@@ -7,7 +7,7 @@ namespace Locadora_de_carro_console.Modelo
         private string modelo;
         private string placa;
         private Marca marca;
-        private string cor;
+       
         
 
         public override  string ToString(){
@@ -15,7 +15,6 @@ namespace Locadora_de_carro_console.Modelo
             retorno += "Marca -"+ this.marca + System.Environment.NewLine;
             retorno += "Modelo -" + this.modelo + System.Environment.NewLine;
             retorno += "Placa -"+ this.placa + System.Environment.NewLine;
-            retorno += "Cor -"+ this.cor + System.Environment.NewLine;
             return retorno;
         }
         
@@ -37,12 +36,7 @@ namespace Locadora_de_carro_console.Modelo
         public void setMarca(Marca marca){
             this.marca = marca; 
         }
-         public string getCor(){
-            return this.cor; 
-        }
-        public void setCor(string cor){
-            this.cor = cor; 
-        }
+         
         
     
     }
