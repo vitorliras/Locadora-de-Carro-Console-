@@ -1,0 +1,16 @@
+C:\Users\Vitor\git\Locadora-de-carro-console\bin\Debug\net5.0\Locadora-de-carro-console.exe
+C:\Users\Vitor\git\Locadora-de-carro-console\bin\Debug\net5.0\Locadora-de-carro-console.deps.json
+C:\Users\Vitor\git\Locadora-de-carro-console\bin\Debug\net5.0\Locadora-de-carro-console.runtimeconfig.json
+C:\Users\Vitor\git\Locadora-de-carro-console\bin\Debug\net5.0\Locadora-de-carro-console.runtimeconfig.dev.json
+C:\Users\Vitor\git\Locadora-de-carro-console\bin\Debug\net5.0\Locadora-de-carro-console.dll
+C:\Users\Vitor\git\Locadora-de-carro-console\bin\Debug\net5.0\ref\Locadora-de-carro-console.dll
+C:\Users\Vitor\git\Locadora-de-carro-console\bin\Debug\net5.0\Locadora-de-carro-console.pdb
+C:\Users\Vitor\git\Locadora-de-carro-console\obj\Debug\net5.0\Locadora-de-carro-console.csproj.AssemblyReference.cache
+C:\Users\Vitor\git\Locadora-de-carro-console\obj\Debug\net5.0\Locadora-de-carro-console.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vitor\git\Locadora-de-carro-console\obj\Debug\net5.0\Locadora-de-carro-console.AssemblyInfoInputs.cache
+C:\Users\Vitor\git\Locadora-de-carro-console\obj\Debug\net5.0\Locadora-de-carro-console.AssemblyInfo.cs
+C:\Users\Vitor\git\Locadora-de-carro-console\obj\Debug\net5.0\Locadora-de-carro-console.csproj.CoreCompileInputs.cache
+C:\Users\Vitor\git\Locadora-de-carro-console\obj\Debug\net5.0\Locadora-de-carro-console.dll
+C:\Users\Vitor\git\Locadora-de-carro-console\obj\Debug\net5.0\ref\Locadora-de-carro-console.dll
+C:\Users\Vitor\git\Locadora-de-carro-console\obj\Debug\net5.0\Locadora-de-carro-console.pdb
+C:\Users\Vitor\git\Locadora-de-carro-console\obj\Debug\net5.0\Locadora-de-carro-console.genruntimeconfig.cache
