@@ -10,9 +10,7 @@ namespace Locadora_de_carro_console.Modelo
         private double valor;
         private Carro carro;
         private int diaE, mesE, anoE, diaS, mesS, anoS;
-        
-
-       
+        private bool Excluido;
 
         public override string ToString()
         {
@@ -87,7 +85,13 @@ namespace Locadora_de_carro_console.Modelo
         public void setCarro(Carro carro){
             this.carro = carro; 
         }
-
+        public bool getExcluido()
+		{
+			return this.Excluido;
+		}
+        public void Exclui(){
+            this.Excluido = true;
+        }
         
     }
 }

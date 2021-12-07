@@ -13,7 +13,7 @@ namespace Locadora_de_carro_console.Repositorio
 
         public void Exclui(int id)
         {
-            throw new System.NotImplementedException();
+            ListaLocadora[id].Exclui();
         }
 
         public void Insere(Locadora locadora)

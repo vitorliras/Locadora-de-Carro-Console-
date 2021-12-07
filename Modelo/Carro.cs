@@ -8,6 +8,7 @@ namespace Locadora_de_carro_console.Modelo
         private string placa;
         private Marca marca;
         private string cor;
+        
 
         public override  string ToString(){
             string retorno = "";

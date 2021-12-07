@@ -16,7 +16,12 @@ namespace Locadora_de_carro_console.Repositorio
 
         public void Exclui(int id)
         {
-            
+            //Remove o vetor
+            //ListaCliente.RemoveAt(id);  
+
+            //Marca como excluido
+            ListaCliente[id].Exclui();
+
         }
 
         public void Insere(Cliente cliente)

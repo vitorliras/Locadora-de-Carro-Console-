@@ -5,6 +5,7 @@ namespace Locadora_de_carro_console.Modelo
         private int id;
         private string nome;
         private string cpf;
+        private bool Excluido;
 
         public override  string ToString(){
             string retorno = "";
@@ -31,7 +32,13 @@ namespace Locadora_de_carro_console.Modelo
         public void setNome(string nome){
             this.nome = nome; 
         }
-        
-     
+
+        public bool getExcluido()
+		{
+			return this.Excluido;
+		}
+        public void Exclui(){
+            this.Excluido = true;
+        }
     }
 }
