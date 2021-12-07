@@ -7,9 +7,9 @@ namespace Locadora_de_carro_console.Repositorio
     {
          List<Locadora> Lista();
          Locadora RetornaPorId(int id);
-         void Insere(Locadora entidade);
+         void Insere(Locadora locadora);
          void Exclui(int id);
-         void Atualizar(int id, Locadora entidade);
+         void Atualizar(int id, Locadora locadora);
          int ProximoId();
          
     }

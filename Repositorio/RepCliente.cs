@@ -11,32 +11,32 @@ namespace Locadora_de_carro_console.Repositorio
         
         public void Atualizar(int id, Cliente cliente)
         {
-            throw new System.NotImplementedException();
+            ListaCliente[id] = cliente;
         }
 
         public void Exclui(int id)
         {
-            throw new System.NotImplementedException();
+            
         }
 
         public void Insere(Cliente cliente)
         {
-            throw new System.NotImplementedException();
+            ListaCliente.Add(cliente);
         }
 
         public List<Cliente> Lista()
         {
-            throw new System.NotImplementedException();
+            return ListaCliente;
         }
 
         public int ProximoId()
         {
-            throw new System.NotImplementedException();
+            return ListaCliente.Count;
         }
 
         public Cliente RetornaPorId(int id)
         {
-            throw new System.NotImplementedException();
+            return ListaCliente[id];
         }
     }
 }

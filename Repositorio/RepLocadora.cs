@@ -5,9 +5,10 @@ namespace Locadora_de_carro_console.Repositorio
 {
     public class RepLocadora : IRepLocadora
     {
-        public void Atualizar(int id, Locadora entidade)
+        private List<Locadora> ListaLocadora = new List<Locadora>();
+        public void Atualizar(int id, Locadora locadora)
         {
-            throw new System.NotImplementedException();
+            ListaLocadora[id] = locadora;
         }
 
         public void Exclui(int id)
@@ -15,24 +16,24 @@ namespace Locadora_de_carro_console.Repositorio
             throw new System.NotImplementedException();
         }
 
-        public void Insere(Locadora entidade)
+        public void Insere(Locadora locadora)
         {
-            throw new System.NotImplementedException();
+            ListaLocadora.Add(locadora);
         }
 
         public List<Locadora> Lista()
         {
-            throw new System.NotImplementedException();
+            return ListaLocadora;
         }
 
         public int ProximoId()
         {
-            throw new System.NotImplementedException();
+           return ListaLocadora.Count;
         }
 
         public Locadora RetornaPorId(int id)
         {
-            throw new System.NotImplementedException();
+            return ListaLocadora[id];
         }
     }
 }
