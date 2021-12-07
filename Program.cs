@@ -1,4 +1,5 @@
-﻿using System;
+﻿using System.Security.AccessControl;
+using System;
 
 using Locadora_de_carro_console.Modelo;
 using Locadora_de_carro_console.Repositorio;
@@ -9,21 +10,20 @@ namespace Locadora_de_carro_console
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            Locadora l = new Locadora();
-            
-            //Console.WriteLine(l.Catalogo);
+            Console.WriteLine("1-Cliente / 2- locadora");
+            int escolha = int.Parse(Console.ReadLine());
 
-                int escolha=1;
+            if(escolha == 1){
                 double total = 0.0;
                 int dia=0;
                 string nome = "";
 
                 while(escolha !=0 || escolha < 0){
                     Console.WriteLine();
+
                     foreach (int i in Enum.GetValues(typeof(Marca))){
-			        Console.WriteLine("{0}-{1}", i, Enum.GetName(typeof(Marca), i));
-			}
+			            Console.WriteLine("{0}-{1}", i, Enum.GetName(typeof(Marca), i));
+			        }
 
                     Console.WriteLine("Escolha o marca que desejas alugar: ");
                     escolha = int.Parse(Console.ReadLine());
@@ -199,8 +199,11 @@ namespace Locadora_de_carro_console
                         }
                     }
             }
+                ProgramCliente pg = new ProgramCliente();
+                pg.programCliente();
+                Console.WriteLine($"Veiculo: {nome} \nR${string.Format("{0:0.00}", total)}");  
                 
-            Console.WriteLine($"{nome}: R${string.Format("{0:0.00}", total)}");   
+            }
              
         }
     }
