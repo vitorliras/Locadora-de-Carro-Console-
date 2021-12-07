@@ -5,6 +5,13 @@ namespace Locadora_de_carro_console.Repositorio
 {
     public class RepLocadora : IRepLocadora
     {
+        private static RepLocadora instancia;
+        public static RepLocadora getInstancia(){
+            if(instancia == null){
+                instancia = new RepLocadora();
+            }
+            return instancia;
+        }
         private List<Locadora> ListaLocadora = new List<Locadora>();
         public void Atualizar(int id, Locadora locadora)
         {

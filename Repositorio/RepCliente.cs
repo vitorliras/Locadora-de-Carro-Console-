@@ -6,8 +6,14 @@ namespace Locadora_de_carro_console.Repositorio
     public class RepCliente : IRepCliente
     {
               
-         private List<Cliente> ListaCliente = new List<Cliente>();
-
+        private List<Cliente> ListaCliente = new List<Cliente>();
+        private static RepCliente instancia;
+        public static RepCliente getInstancia(){
+            if(instancia == null){
+                instancia = new RepCliente();
+            }
+            return instancia;
+        }
         
         public void Atualizar(int id, Cliente cliente)
         {
